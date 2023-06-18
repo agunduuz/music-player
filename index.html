@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Music Player Project" />
+    <meta name="keywords" content="Music Player" />
+    <meta name="author" content="Anıl Gündüz" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Project - Music Player</title>
+  </head>
+  <body>
+    <main class="container">
+      <img id="music-image" src="" />
+      <audio id="audio" src=""></audio>
+      <article id="music-details">
+        <p class="title"></p>
+        <p class="singer"></p>
+      </article>
+      <article id="progress">
+        <input type="range" id="progress-bar" />
+        <section class="times">
+          <span id="current-time">0:00</span>
+          <span id="duration">0:00</span>
+        </section>
+      </article>
+      <article id="controls">
+        <section>
+          <i id="prev" class="fa-solid fa-backward-step"></i>
+          <i id="play" class="fa-solid fa-play"></i>
+          <i id="next" class="fa-solid fa-forward-step"></i>
+        </section>
+      </article>
+      <article id="card-footer">
+        <section class="playlist">
+          <i class="fa-solid fa-bars"></i>
+        </section>
+
+        <section class="volume-container">
+          <i id="volume" class="fa-solid fa-volume-high"></i>
+          <input type="range" id="volume-bar" max="100" value="75" />
+        </section>
+      </article>
+      <article id="music-list" class="collapse show">
+        <ul class="list-group">
+          <!-- <li class="list-group">
+            <span>Möw - Giuro</span>
+            <span class="badge">7:25</span>
+          </li>-->
+        </ul>
+      </article>
+    </main>
+
+    <script src="music.js"></script>
+    <script src="musicplayer.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
